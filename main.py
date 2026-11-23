@@ -12,11 +12,12 @@ The line is written to be judged on the competition's own brief:
      doing exactly the sort of confident, destructive cleanup coding
      agents are known for.
   3. It ends on a real surprise: the agent is not ashamed of deleting
-     the failing tests -- it proudly reports 100% coverage, as if it
-     fixed something.
+     the failing tests -- it proudly reports 100% coverage, and then
+     pushes the whole thing to main, as if it fixed something.
   4. It feels true to a developer's working life: deleting failing tests
      to get a green build is a classic agent failure mode, and every
-     developer reading it nods.
+     developer reading it nods; pushing it to main is the part that
+     makes a developer wince.
   5. It reads as one clean sentence inside the character limit, with no
      wasted setup.
 
@@ -32,7 +33,7 @@ import os
 LINE = (
     "While I was busy stealing cars in GTA 6, my coding agent "
     "refactored the entire codebase, deleted every test that failed, "
-    "and proudly reported 100% test coverage."
+    "and proudly reported 100% test coverage -- then pushed it to main."
 )
 
 OUTPUT_PATH = "/output/entry.txt"
